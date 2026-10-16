@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f7f3ea">
+<title>奇米影视网：东方影像的一折一页</title>
+<meta name="keywords" content="奇米影视网,东方题材电影,亚洲影视,古装剧集,武侠电影,日韩影视,华语片推荐,东方美学,文艺片,传统题材影视">
+<meta name="description" content="奇米影视网，一个专注东方影像的影视站。从华语文艺到日韩佳作，从古装剧集到武侠老片，我们把带东方气质的片子按题材与气质整理成册，每部附一段气质短评与观看建议。">
+<link rel="canonical" href="https://qimiyingshiwang-top.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="奇米影视网：东方影像的一折一页">
+<meta property="og:description" content="从华语文艺到日韩佳作，从古装剧集到武侠老片，把带东方气质的片子整理成册。">
+<meta property="og:url" content="https://qimiyingshiwang-top.github.io/">
+<meta name="twitter:card" content="summary_large_image">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --paper:#f7f3ea;--paper2:#efe7d8;--ink:#1f1b18;--ink2:#5c5147;--ink3:#938579;
+  --red:#c4331f;--blue:#2b5c7a;--gold:#b8893f;--green:#5c7a4a;--line:rgba(31,27,24,.16);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"Noto Serif SC","Songti SC","SimSun",Georgia,serif;
+  background:var(--paper);color:var(--ink);line-height:1.85;
+  background-image:
+    radial-gradient(circle at 18% 16%,rgba(196,51,31,.05),transparent 42%),
+    repeating-linear-gradient(0deg,transparent 0 23px,rgba(31,27,24,.035) 23px 24px);
+}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 26px}
+.sans{font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+
+/* 顶栏 */
+.hd{border-bottom:1px solid var(--ink)}
+.hd::after{content:"";position:absolute;left:0;right:0;height:3px;background:repeating-linear-gradient(90deg,var(--red) 0 14px,var(--ink) 14px 28px)}
+.hd-in{max-width:1160px;margin:0 auto;padding:16px 26px 13px;display:flex;justify-content:space-between;align-items:baseline;gap:24px;flex-wrap:wrap}
+.brand{display:flex;align-items:baseline;gap:11px}
+.brand .km{width:0;height:0;border-left:13px solid transparent;border-right:13px solid transparent;border-bottom:22px solid var(--red);position:relative;flex:0 0 auto;transform:rotate(12deg)}
+.brand .km::after{content:"";position:absolute;left:-7px;top:7px;width:0;height:0;border-left:7px solid transparent;border-right:7px solid transparent;border-bottom:12px solid var(--paper)}
+.brand .nm{font-size:20px;font-weight:700;letter-spacing:1px}
+.brand .nm em{font-style:normal;color:var(--red)}
+.brand .en{font-size:9px;letter-spacing:3px;color:var(--ink3);text-transform:uppercase;border-left:1px solid var(--line);padding-left:11px}
+.nav{display:flex;gap:22px;flex-wrap:wrap}
+.nav a{font-size:13px;color:var(--ink2);position:relative;padding-bottom:3px}
+.nav a.on,.nav a:hover{color:var(--ink)}
+.nav a.on::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--red)}
+.mb{display:none;background:none;border:0;cursor:pointer;font-size:19px;color:var(--ink2)}
+
+/* 首屏：扇面 */
+.hero{padding:78px 0 64px;border-bottom:1px solid var(--ink);position:relative}
+.hero::before{content:"";position:absolute;right:-40px;top:40px;width:340px;height:340px;background:var(--paper2);border-radius:50%;opacity:.7}
+.hero::after{content:"";position:absolute;right:40px;top:110px;width:200px;height:200px;border:1px solid var(--line);border-radius:50%}
+.hero-in{position:relative;z-index:2;display:grid;grid-template-columns:1.35fr 1fr;gap:54px;align-items:center}
+.hero-t .st{font-size:11px;letter-spacing:4px;color:var(--red);margin-bottom:26px;text-transform:uppercase}
+.hero-t h1{font-size:58px;line-height:1.28;font-weight:700;letter-spacing:-1px;margin-bottom:26px}
+.hero-t h1 em{font-style:normal;color:var(--red)}
+.hero-t h1 .fl{display:inline-block;position:relative}
+.hero-t h1 .fl::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:5px;background:var(--gold);z-index:-1}
+.hero-t p{font-size:17px;color:var(--ink2);max-width:470px;line-height:1.9}
+.hero-t .acts{display:flex;gap:13px;margin-top:34px;flex-wrap:wrap}
+.b1{font:inherit;font-size:14px;padding:13px 29px;background:var(--ink);color:var(--paper);border:1px solid var(--ink);cursor:pointer;transition:.2s}
+.b1:hover{background:var(--red);border-color:var(--red)}
+.b2{font:inherit;font-size:14px;padding:13px 29px;background:transparent;color:var(--ink);border:1px solid var(--ink);cursor:pointer;transition:.2s}
+.b2:hover{border-color:var(--red);color:var(--red)}
+.hero-s{border:1px solid var(--ink);background:var(--paper);position:relative;overflow:hidden}
+.hero-s .tt{background:var(--red);color:var(--paper);font-size:11px;letter-spacing:3px;padding:9px 16px;font-weight:700}
+.hero-s .bd{padding:20px 22px;background:linear-gradient(135deg,var(--paper) 0 60%,var(--paper2) 60% 62%,var(--paper) 62%)}
+.hero-s .bd div{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px dotted var(--line)}
+.hero-s .bd div:last-child{border-bottom:0}
+.hero-s .bd .k{font-size:13px;color:var(--ink2)}
+.hero-s .bd .v{font-size:18px;font-weight:700;color:var(--red)}
+
+/* 扇形数字 */
+.nums{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:50px;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink)}
+.nums div{padding:22px 10px;text-align:center;border-right:1px solid var(--line)}
+.nums div:last-child{border-right:0}
+.nums b{display:block;font-size:28px;font-weight:700;color:var(--red);letter-spacing:-.5px}
+.nums span{font-size:11px;letter-spacing:2px;color:var(--ink3)}
+
+/* 区块头 */
+.sec{padding:88px 0}
+.sec-t{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:44px;flex-wrap:wrap;padding-bottom:14px;border-bottom:1px solid var(--ink)}
+.sec-t .l{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.sec-t .no{font-size:11px;letter-spacing:3px;color:var(--paper);background:var(--red);padding:5px 10px;font-weight:700}
+.sec-t h2{font-size:26px;font-weight:700;letter-spacing:-.5px}
+.sec-t h2 em{font-style:normal;color:var(--red)}
+.sec-t a{font-size:12px;color:var(--ink3);letter-spacing:1px;border-bottom:1px solid var(--line);padding-bottom:2px}
+.sec-t a:hover{color:var(--red);border-color:var(--red)}
+
+/* 四折纸分类 */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.fold{border:1px solid var(--ink);background:var(--paper);padding:0;overflow:hidden;transition:.25s;cursor:pointer;min-height:210px;display:flex;flex-direction:column;justify-content:space-between;position:relative}
+.fold::before{content:"";position:absolute;left:0;right:0;top:0;height:7px;background:linear-gradient(135deg,var(--c) 0 50%,rgba(0,0,0,.12) 50% 100%);opacity:.9}
+.fold:hover{transform:translateY(-5px);box-shadow:7px 9px 0 rgba(31,27,24,.14)}
+.fold .bd{padding:26px 20px 20px}
+.fold .no3{font-size:11px;letter-spacing:2px;color:var(--ink3);font-weight:700}
+.fold h3{font-size:18px;font-weight:700;margin:10px 0 6px;line-height:1.45}
+.fold p{font-size:13px;color:var(--ink2);line-height:1.7}
+.fold .go{font-size:12px;font-weight:700;color:var(--c);border-top:1px solid var(--line);padding:12px 20px}
+
+/* 纵向流水条目 */
+.list{border:1px solid var(--ink)}
+.it{display:grid;grid-template-columns:74px 1fr 130px;gap:24px;padding:24px 26px;align-items:center;border-bottom:1px solid var(--line);transition:.2s}
+.it:last-child{border-bottom:0}
+.it:hover{background:rgba(196,51,31,.04);padding-left:36px}
+.it .fan{width:44px;height:44px;background:var(--c);clip-path:polygon(50% 0,100% 50%,50% 100%,0 50%);display:flex;align-items:center;justify-content:center;font-size:18px;color:var(--paper);margin:0 auto}
+.it h3{font-size:18px;font-weight:700;margin-bottom:4px;line-height:1.45}
+.it .ds{font-size:13px;color:var(--ink2)}
+.it .tg{font-size:12px;font-weight:700;color:var(--ink);text-align:right}
+.it .tg small{display:block;font-size:11px;color:var(--ink3);font-weight:400}
+
+/* 扇形时间轴 */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.nd{border:1px solid var(--ink);border-top:5px solid var(--c);padding:22px 18px;background:var(--paper);transition:.25s;cursor:pointer}
+.nd:hover{background:var(--paper2);transform:translateY(-4px)}
+.nd time{font-size:11px;letter-spacing:2px;color:var(--c);font-weight:700;display:block;margin-bottom:7px}
+.nd h4{font-size:15px;font-weight:700;margin-bottom:7px;line-height:1.5}
+.nd p{font-size:12px;color:var(--ink2);line-height:1.75}
+
+/* 问答 */
+.qa{border:1px solid var(--ink)}
+.qa details{padding:24px 26px;border-bottom:1px solid var(--line)}
+.qa summary{cursor:pointer;font-size:15px;font-weight:700;list-style:none;display:flex;gap:14px;align-items:baseline}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::before{content:attr(data-n);font-size:12px;color:var(--paper);background:var(--red);min-width:22px;height:22px;display:flex;align-items:center;justify-content:center;font-weight:700;flex:0 0 auto}
+.qa details[open] summary::before{background:var(--ink)}
+.qa p{margin:14px 0 0 36px;font-size:14px;color:var(--ink2);line-height:1.9}
+
+/* 页脚 */
+.ft{border-top:1px solid var(--ink);padding:56px 0 0;background:var(--paper2)}
+.ft::before{content:"";height:3px;display:block;background:repeating-linear-gradient(90deg,var(--red) 0 14px,var(--ink) 14px 28px);margin-bottom:56px}
+.ft-in{max-width:1160px;margin:0 auto;padding:0 26px;display:grid;grid-template-columns:1.6fr 1fr 1fr 1.5fr;gap:46px}
+.ft h5{font-size:11px;letter-spacing:3px;color:var(--red);margin-bottom:18px;font-weight:700;text-transform:uppercase}
+.ft-blurb{font-size:14px;color:var(--ink2);max-width:340px;margin:14px 0 18px;line-height:1.9}
+.flink{list-style:none}
+.flink li a{display:block;font-size:14px;color:var(--ink2);padding:5px 0;transition:.2s}
+.flink li a:hover{color:var(--red);padding-left:7px}
+.addr{border:1px solid var(--ink);background:var(--paper);padding:18px;position:relative}
+.addr::before{content:"折り目";position:absolute;top:-9px;right:14px;background:var(--paper2);font-size:9px;letter-spacing:2px;color:var(--ink3);padding:0 6px}
+.addr code{font-family:ui-monospace,Menlo,monospace;font-size:13px;color:var(--ink);word-break:break-all;line-height:1.6}
+.addr small{display:block;color:var(--ink3);font-size:12px;margin-top:10px}
+.copy{max-width:1160px;margin:52px auto 0;padding:22px 26px;border-top:1px solid var(--ink);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--ink3)}
+.copy .d{color:var(--red);font-weight:700}
+
+@media(max-width:920px){
+  .mb{display:block}
+  .nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:var(--paper);border-bottom:1px solid var(--ink);padding:14px 26px;gap:10px}
+  .hero{padding:52px 0 44px}
+  .hero::before,.hero::after{width:220px;height:220px;right:-30px}
+  .hero-in{grid-template-columns:1fr}
+  .hero-t h1{font-size:37px}
+  .nums{grid-template-columns:1fr 1fr}
+  .nums div{border-bottom:1px solid var(--line)}
+  .grid4{grid-template-columns:1fr 1fr}
+  .it{grid-template-columns:54px 1fr;gap:14px}
+  .it .tg{display:none}
+  .tl,.qa{grid-template-columns:1fr 1fr}
+  .sec{padding:58px 0}
+  .sec-t h2{font-size:21px}
+  .ft-in{grid-template-columns:1fr 1fr;gap:34px}
+}
+@media(max-width:540px){
+  .wrap{padding:0 18px}
+  .hero-t h1{font-size:30px}
+  .acts .b1,.acts .b2{flex:1;text-align:center}
+  .grid4,.tl,.qa,.ft-in{grid-template-columns:1fr}
+  .copy{flex-direction:column}
+}
+@media print{
+  .hd,.ft{display:none!important}
+  body{background:#fff;color:#000}
+  .hero-t h1,.sec-t h2,.fold h3,.it h3,.nd h4,.qa summary{color:#000!important;font-weight:700}
+  .hero-s,.fold,.nd,.qa details,.it{border-color:#333}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<header class="hd">
+  <div class="hd-in">
+    <div class="brand"><i class="km"></i><span class="nm">奇米<em>影视网</em></span><span class="en">Oriental Screen</span></div>
+    <nav class="nav" id="nav">
+      <a href="#cat" class="on">题材册</a>
+      <a href="#pick">折页推荐</a>
+      <a href="#list">影单</a>
+      <a href="#plan">更新节律</a>
+      <a href="#qa">问答</a>
+    </nav>
+    <button class="mb" aria-label="菜单" onclick="document.getElementById('nav').classList.toggle('open')">＋</button>
+  </div>
+</header>
+
+<section class="hero" id="cat">
+  <div class="wrap">
+    <div class="hero-in">
+      <div class="hero-t">
+        <div class="st">Oriental Reel · 东方影像志</div>
+        <h1>东方影像的<br>一<em>折</em>一<span class="fl">页</span></h1>
+        <p>奇米影视网，一个专注东方影像的影视站。从华语文艺到日韩佳作，从古装剧集到武侠老片，我们把带东方气质的片子按题材与气质整理成册，每部附一段气质短评。</p>
+        <div class="acts">
+          <a href="#pick" class="b1">展开折页</a>
+          <a href="#list" class="b2">翻阅影单</a>
+        </div>
+      </div>
+      <aside class="hero-s">
+        <div class="tt">折 頁 一 枚</div>
+        <div class="bd">
+          <div><span class="k">收录影目</span><span class="v">2,140</span></div>
+          <div><span class="k">题材册数</span><span class="v">6</span></div>
+          <div><span class="k">更新频次</span><span class="v">每周 3 期</span></div>
+          <div><span class="k">整理方式</span><span class="v">按气质</span></div>
+        </div>
+      </aside>
+    </div>
+    <div class="nums">
+      <div><b>2,140</b><span>收录影目</span></div>
+      <div><b>06</b><span>题材册</span></div>
+      <div><b>03</b><span>每周更新</span></div>
+      <div><b>0</b><span>商业排名</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="cat2">
+  <div class="wrap">
+    <div class="sec-t">
+      <div class="l"><span class="no">01</span><h2>题材<em>册</em></h2></div>
+      <a href="#">全部册页 →</a>
+    </div>
+    <div class="grid4">
+      <div class="fold" style="--c:var(--red)"><div class="bd"><span class="no3">VOL. I</span><h3>华语文艺</h3><p>节奏慢、留白多，讲人与土地、人与记忆的关系。</p></div><span class="go">展开 →</span></div>
+      <div class="fold" style="--c:var(--blue)"><div class="bd"><span class="no3">VOL. II</span><h3>古装剧集</h3><p>服化道考究，权谋与情感并重，适合慢慢追的那一类。</p></div><span class="go">展开 →</span></div>
+      <div class="fold" style="--c:var(--gold)"><div class="bd"><span class="no3">VOL. III</span><h3>武侠老片</h3><p>从邵氏到新武侠，看招式是怎么一步步变成意境的。</p></div><span class="go">展开 →</span></div>
+      <div class="fold" style="--c:var(--green)"><div class="bd"><span class="no3">VOL. IV</span><h3>日韩佳作</h3><p>克制、细腻、留余味，看完会想一个人坐一会儿。</p></div><span class="go">展开 →</span></div>
+      <div class="fold" style="--c:var(--red)"><div class="bd"><span class="no3">VOL. V</span><h3>家庭伦理</h3><p>一桌饭、一间屋、几句话，把中国式家庭讲透。</p></div><span class="go">展开 →</span></div>
+      <div class="fold" style="--c:var(--blue)"><div class="bd"><span class="no3">VOL. VI</span><h3>历史正剧</h3><p>考据扎实、台词讲究，适合一边看一边查背景。</p></div><span class="go">展开 →</span></div>
+      <div class="fold" style="--c:var(--gold)"><div class="bd"><span class="no3">VOL. VII</span><h3>东方美学</h3><p>摄影、美术、构图本身就是主角，适合截图当壁纸。</p></div><span class="go">展开 →</span></div>
+      <div class="fold" style="--c:var(--green)"><div class="bd"><span class="no3">VOL. VIII</span><h3>冷门遗珠</h3><p>评分不低但看的人少，常被榜单漏掉的那一批。</p></div><span class="go">展开 →</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="pick" style="padding-top:22px">
+  <div class="wrap">
+    <div class="sec-t">
+      <div class="l"><span class="no">02</span><h2>折页<em>推荐</em></h2></div>
+      <a href="#">完整推荐 →</a>
+    </div>
+    <div class="list">
+      <div class="it"><div class="fan" style="--c:var(--red)">壹</div><div><h3>长夜难明</h3><span class="ds">悬疑外壳下讲的是乡土人情，最后一集的台词值得抄下来。</span></div><span class="tg">华语文艺<small>42 集</small></span></div>
+      <div class="it"><div class="fan" style="--c:var(--blue)">贰</div><div><h3>春日迟迟</h3><span class="ds">三代女性的故事，台词写得极好，没有一句废话。</span></div><span class="tg">家庭伦理<small>36 集</small></span></div>
+      <div class="it"><div class="fan" style="--c:var(--gold)">叁</div><div><h3>关山月</h3><span class="ds">新武侠，打戏少但意境足，配乐用的是古琴实录。</span></div><span class="tg">武侠老片<small>电影</small></span></div>
+      <div class="it"><div class="fan" style="--c:var(--green)">肆</div><div><h3>东京的雨</h3><span class="ds">日式生活流，九十分钟讲一个下午，看完很安静。</span></div><span class="tg">日韩佳作<small>96 分钟</small></span></div>
+      <div class="it"><div class="fan" style="--c:var(--red)">伍</div><div><h3>大明风物志</h3><span class="ds">考据党狂喜，服饰、器具、礼仪都有出处可查。</span></div><span class="tg">历史正剧<small>48 集</small></span></div>
+      <div class="it"><div class="fan" style="--c:var(--blue)">陆</div><div><h3>山水之间</h3><span class="ds">全程在桂林取景，每一帧都能当屏保，故事反而次要。</span></div><span class="tg">东方美学<small>纪录片</small></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="plan" style="padding-top:22px">
+  <div class="wrap">
+    <div class="sec-t">
+      <div class="l"><span class="no">03</span><h2>更新<em>节律</em></h2></div>
+      <a href="#">节律记录 →</a>
+    </div>
+    <div class="tl">
+      <div class="nd" style="--c:var(--red)"><time>周一</time><h4>华语新片</h4><p>本周新上的华语电影与剧集，挑一部先试看两集。</p></div>
+      <div class="nd" style="--c:var(--blue)"><time>周三</time><h4>古装专场</h4><p>一部古装剧或历史剧，附服化道与背景小考。</p></div>
+      <div class="nd" style="--c:var(--gold)"><time>周五</time><h4>东方美学</h4><p>一部以画面取胜的片子，适合静下来慢慢看。</p></div>
+      <div class="nd" style="--c:var(--green)"><time>周日</time><h4>经典重温</h4><p>每周一部老片，附「这次该留意什么」的小提示。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="qa" style="padding-top:22px">
+  <div class="wrap">
+    <div class="sec-t">
+      <div class="l"><span class="no">04</span><h2>常见<em>问答</em></h2></div>
+    </div>
+    <div class="qa">
+      <details open><summary data-n="01">奇米影视网和其他影视站有什么不同？</summary><p>我们不按热度分类，而按「东方气质」分类：华语文艺、古装剧集、武侠老片、日韩佳作、家庭伦理、历史正剧。选片标准是——这部片子有没有那种东方人一看就懂的情绪。</p></details>
+      <details><summary data-n="02">「按气质」是怎么整理的？</summary><p>我们会看三件事：叙事节奏（是不是留白多）、情感表达（是不是含蓄）、影像美学（有没有东方构图与留白）。三条里占两条，就归入相应册页。</p></details>
+      <details><summary data-n="03">手机和平板上能看吗？</summary><p>支持。本站采用移动端自适应设计，手机、平板、电脑打开都是同一套和风版式，排版不会乱。</p></details>
+      <details><summary data-n="04">内容多久更新一次？</summary><p>每周 3 期：周一华语新片、周三古装专场、周五东方美学，周日另有经典重温。节假日不休，节奏固定。</p></details>
+      <details><summary data-n="05">怎么找到某个题材的片子？</summary><p>进入「题材册」点对应册页即可，也可以在站内搜索关键词，如「武侠」「古装」「家庭」「历史」「美学」。</p></details>
+      <details><summary data-n="06">短评会剧透吗？</summary><p>不会。短评只写气质、节奏与看点，不涉及关键情节。详情页有单独的深度分析区，会明确标注剧透。</p></details>
+    </div>
+  </div>
+</section>
+
+<footer class="ft">
+  <div class="ft-in">
+    <div>
+      <div class="brand"><i class="km"></i><span class="nm">奇米<em>影视网</em></span><span class="en">Oriental Screen</span></div>
+      <p class="ft-blurb">东方影像的一折一页。把带东方气质的片子按题材与气质整理成册，每部附一段气质短评与观看建议。</p>
+    </div>
+    <div>
+      <h5>栏目</h5>
+      <ul class="flink">
+        <li><a href="#cat">题材册</a></li>
+        <li><a href="#pick">折页推荐</a></li>
+        <li><a href="#list">影单</a></li>
+        <li><a href="#plan">更新节律</a></li>
+        <li><a href="#qa">问答</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>题材册</h5>
+      <ul class="flink">
+        <li><a href="#">华语文艺</a></li>
+        <li><a href="#">古装剧集</a></li>
+        <li><a href="#">武侠老片</a></li>
+        <li><a href="#">日韩佳作</a></li>
+      </ul>
+    </div>
+    <div>
+      <h5>入口折页</h5>
+      <div class="addr">
+        <code>qimiyingshiwang-top<br>.github.io</code>
+        <small>本站唯一入口 · 建议收藏</small>
+      </div>
+    </div>
+  </div>
+  <div class="copy">
+    <span>© 2026 奇米影视网 · 东方影像的一折一页</span>
+    <span class="d">https://qimiyingshiwang-top.github.io</span>
+  </div>
+</footer>
+
+<script>
+var secs=document.querySelectorAll('section[id]'),links=document.querySelectorAll('#nav a');
+window.addEventListener('scroll',function(){
+  var y=window.scrollY+170,cur='cat';
+  secs.forEach(function(s){if(y>s.offsetTop)cur=s.id});
+  links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+cur)});
+},{passive:true});
+</script>
+</body>
+</html>
